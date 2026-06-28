@@ -23,7 +23,9 @@ def send_email(briefing: str, sender_email: str, sender_app_password: str,
     print(f"\n📧 Sending to {recipient_email}...")
 
     try:
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+        with smtplib.SMTP("smtp.gmail.com", 587) as server:
+            server.ehlo()
+            server.starttls()
             server.login(sender_email, sender_app_password)
             server.sendmail(sender_email, recipient_email, msg.as_string())
         print("✓ Email sent")
