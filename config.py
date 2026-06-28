@@ -196,6 +196,13 @@ GOOGLE_ALERT_FEEDS = [
     "https://www.google.co.in/alerts/feeds/01425330569128522464/3021223753586574303",
     "https://www.google.co.in/alerts/feeds/01425330569128522464/15560152635813350081",
     "https://www.google.co.in/alerts/feeds/01425330569128522464/15560152635813350644",
+    "https://www.google.co.in/alerts/feeds/01425330569128522464/16364453294335925447",
+    "https://www.google.co.in/alerts/feeds/01425330569128522464/16364453294335922357",
+    "https://www.google.co.in/alerts/feeds/01425330569128522464/19844091331779924",
+    "https://www.google.co.in/alerts/feeds/01425330569128522464/3021223753586575329",
+    "https://www.google.co.in/alerts/feeds/01425330569128522464/3021223753586574303",
+    "https://www.google.co.in/alerts/feeds/01425330569128522464/15560152635813350081",
+    "https://www.google.co.in/alerts/feeds/01425330569128522464/15560152635813350644",
 ]
 
 # ============================================================
