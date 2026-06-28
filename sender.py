@@ -1,10 +1,10 @@
 """
-sender.py — Gmail SMTP delivery
+sender.py — SendGrid email delivery
 """
 
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
+import os
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
 from datetime import datetime
 
 
@@ -14,27 +14,20 @@ def send_email(briefing: str, sender_email: str, sender_app_password: str,
     date_str = datetime.now().strftime("%B %d, %Y")
     subject = subject_template.format(date=date_str)
 
-    msg = MIMEMultipart("alternative")
-    msg["Subject"] = subject
-    msg["From"] = sender_email
-    msg["To"] = recipient_email
-    msg.attach(MIMEText(briefing, "plain", "utf-8"))
+    message = Mail(
+        from_email=sender_email,
+        to_emails=recipient_email,
+        subject=subject,
+        plain_text_content=briefing
+    )
 
     print(f"\n📧 Sending to {recipient_email}...")
 
     try:
-        with smtplib.SMTP("smtp.gmail.com", 587) as server:
-            server.ehlo()
-            server.starttls()
-            server.login(sender_email, sender_app_password)
-            server.sendmail(sender_email, recipient_email, msg.as_string())
-        print("✓ Email sent")
+        sg = SendGridAPIClient(os.environ.get("SENDGRID_API_KEY"))
+        response = sg.send(message)
+        print(f"✓ Email sent (status {response.status_code})")
         return True
-
-    except smtplib.SMTPAuthenticationError:
-        print("✗ Gmail auth failed — use App Password, not your Gmail password")
-        print("  Get one at: myaccount.google.com/apppasswords")
-        return False
 
     except Exception as e:
         print(f"✗ Send failed: {e}")
