@@ -89,6 +89,11 @@ WATCHLIST = {
         "thesis_drivers": ["SanDisk NAND", "KV cache", "AI storage", "NAND pricing", "datacenter storage"],
         "target_month": "Research ongoing",
     },
+    "SPCX": {
+        "thesis": "SpaceX — rockets, Starlink, xAI, space data centers. IPO June 12 2026 at $135. Currently ~$153. Waiting for post-lock-up price discovery before buying.",
+        "thesis_drivers": ["SpaceX earnings", "Starlink subscribers", "SPCX stock", "space data center", "xAI revenue", "Starship launch"],
+        "target_month": "Watch — buy after 180-day lock-up expiry",
+    },
     "MOD": {
         "thesis": "Modine — pure-play thermal management post-spinoff. 50-70% annual growth guided.",
         "thesis_drivers": ["Modine data center", "thermal management", "chiller demand", "liquid cooling spinoff"],
