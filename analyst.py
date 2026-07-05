@@ -72,7 +72,19 @@ Max 3 items. If nothing: "Nothing new on radar this week."
 ---STRATECHERY REMINDER---
 Always include: "📖 Read Stratechery this week: stratechery.com — 15 min long read"
 
-Keep entire briefing readable in under 10 minutes.
+Target reading time: 10-15 minutes. Depth over brevity.
+
+For every signal and thesis check:
+- Name the company and explain in one sentence what it actually does (assume reader knows the thesis but not every company name)
+- Explain WHY this news matters — not just what happened, but the cause-effect chain
+- Quantify where possible — numbers beat adjectives
+- If a signal is bullish, say exactly how it strengthens the thesis
+- If a signal is bearish, say exactly what would have to be true for it to break the thesis
+
+For Unexpected Connections: go deeper. Explain the full chain — why these two things connecting matters more than either alone.
+
+For New Opportunity Radar: give enough context that the reader can evaluate whether to research further — what the company does, why it might be the next bottleneck, what the early signal is.
+
 Be direct. No hedging. No disclaimers. If uncertain, say "Unclear."
 """
 
