@@ -78,7 +78,7 @@ def run_on_schedule():
     print("Running once now to verify setup...")
     run_newsletter()
 
-    schedule.every().sunday.at("08:00").do(run_newsletter)
+    schedule.every().sunday.at("02:30").do(run_newsletter)
 
     while True:
         schedule.run_pending()
