@@ -89,6 +89,11 @@ WATCHLIST = {
         "thesis_drivers": ["SanDisk NAND", "KV cache", "AI storage", "NAND pricing", "datacenter storage"],
         "target_month": "Research ongoing",
     },
+    "META": {
+        "thesis": "Meta — AI-powered advertising flywheel. 700M Meta AI users, zero direct AI revenue yet. Monitoring for monetisation signal. Stage 4 candidate for September slot.",
+        "thesis_drivers": ["Meta AI monetization", "Meta earnings", "Meta Compute", "Llama revenue", "Meta advertising AI", "Reality Labs"],
+        "target_month": "Research Jul-Aug, decide September",
+    },
     "SPCX": {
         "thesis": "SpaceX — rockets, Starlink, xAI, space data centers. IPO June 12 2026 at $135. Currently ~$153. Waiting for post-lock-up price discovery before buying.",
         "thesis_drivers": ["SpaceX earnings", "Starlink subscribers", "SPCX stock", "space data center", "xAI revenue", "Starship launch"],
@@ -191,6 +196,14 @@ RSS_FEEDS = [
 # "semiconductor supply sold out", "nuclear power data center contract",
 # "AI infrastructure capex", "Jensen Huang"
 GOOGLE_ALERT_FEEDS = [
+    "https://www.google.co.in/alerts/feeds/01425330569128522464/19844091331779924",
+    "https://www.google.co.in/alerts/feeds/01425330569128522464/3021223753586575329",
+    "https://www.google.co.in/alerts/feeds/01425330569128522464/3021223753586574303",
+    "https://www.google.co.in/alerts/feeds/01425330569128522464/15560152635813350081",
+    "https://www.google.co.in/alerts/feeds/01425330569128522464/15560152635813350644",
+    "https://www.google.co.in/alerts/feeds/01425330569128522464/16364453294335925447",
+    "https://www.google.co.in/alerts/feeds/01425330569128522464/16364453294335922357",
+    "https://www.google.com/alerts/feeds/01425330569128522464/14338312367489043007",
     "https://www.google.co.in/alerts/feeds/01425330569128522464/19844091331779924",
     "https://www.google.co.in/alerts/feeds/01425330569128522464/3021223753586575329",
     "https://www.google.co.in/alerts/feeds/01425330569128522464/3021223753586574303",
